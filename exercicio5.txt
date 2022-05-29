@@ -1,0 +1,23 @@
+Algoritmo "Exercicios 5"
+
+Var
+Name: CARACTER;
+age: INTEIRO;
+
+Inicio
+escreval("Digite seu nome: ")
+leia(Name)
+escreval("Digite sua idade: ")
+leia(age)
+
+escreval("Seu nome é: ", Name)
+escreval("Sua idade é: ", age)
+escreval("")
+
+escreval("É maior de idade? ", (age > 18))
+escreval("Idade é igual a 25: ", (age = 25 ))
+escreval("Idade é igual a 25 e o nome igual a Marcos? ", ((age = 25) E (Name = "Marcos")))
+escreval("Idade é diferente de 25 ou o nome é igual a Marcos? ",((NAO(age = 25)) OU (NAO(Name = "Marcos"))))
+escreval("Idade dividida por 2 é igual a 0 ? ", ((age % 2)=0))
+
+Fimalgoritmo

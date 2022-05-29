@@ -1,0 +1,14 @@
+Algoritmo "Somador dos numeros inteiros até 100"
+
+Var
+soma: INTEIRO;
+contador: INTEIRO;
+Inicio
+repita
+      soma <- soma + contador;
+      contador <- contador+1;
+ate contador = 100
+
+escreval("Total =", soma)
+
+Fimalgoritmo

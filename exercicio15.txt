@@ -1,0 +1,22 @@
+Algoritmo "Multiplos de 3"
+
+Var
+i: INTEIRO;
+numero1: INTEIRO;
+numero2: INTEIRO;
+
+Inicio
+escreval("Entre com o primeiro numero")
+leia(numero1)
+escreval("Entre com o segundo numero")
+leia(numero2)
+escreval("")
+
+escreval("Multiplos de 3 entre: ", numero1, " e ", numero2)
+para i de numero1 ate numero2 faca
+     se((i % 3)=0) entao
+     escreva(i, " ")
+     fimse
+fimpara
+
+Fimalgoritmo

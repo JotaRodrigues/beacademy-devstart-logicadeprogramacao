@@ -1,0 +1,18 @@
+Algoritmo "Tabuada usando While"
+
+Var
+numero: INTEIRO;
+i: INTEIRO;
+
+Inicio
+escreval("Entre com o número que deseja ver a tabuada")
+leia(numero)
+i <- 1;
+escreval("")
+escreval("Tabuada do", numero, " é: ")
+enquanto i <= 10 faca
+         escreval(numero*i, " ")
+         i<-i+1;
+fimenquanto
+
+Fimalgoritmo

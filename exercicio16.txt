@@ -1,0 +1,62 @@
+Algoritmo "DEPOSITO-SAQUE-TRANSFERENCIA UZANDO PARA"
+
+Var
+operacao: CARACTERE;
+valorDaOperacao: REAL;
+saldo: REAL;
+bancoNome: CARACTERE;
+agencia: REAL;
+conta: INTEIRO;
+saldoInicial: REAL;
+numeroDeOperacao: INTEIRO;
+i: INTEIRO;
+
+Inicio
+escreval("Digite o saldo inicial da conta: ")
+leia(saldoInicial)
+saldo <- saldoInicial;
+escreval("Quantas operações deseja realizar?")
+leia(numeroDeOperacao)
+para i de 1 ate numeroDeOperacao faca
+   escreval("Qual operação deseja realizar?")
+   escreval("Depósito - Saque - Transfêrencia")
+   leia(operacao)
+   escreval("")
+
+   escolha operacao
+           caso "DEPOSITO"
+                escreva("Entre com o valor para deposito: ")
+                leia(valorDaOperacao)
+                saldo <- saldo + valorDaOperacao;
+                escreval("")
+
+           caso "SAQUE"
+                escreva("Entre com o valor para saque: ")
+                leia(valorDaOperacao)
+                saldo <- saldo - valorDaOperacao;
+                escreval("")
+
+           caso "TRANSFERENCIA"
+                escreva("Digite o nome do bando: ")
+                leia(bancoNome)
+                escreva("Digite a agência: ")
+                leia(agencia)
+                escreva("Digite o numero da conta: ")
+                leia(conta)
+                escreva("Digite o valor da transfência: ")
+                leia(valorDaOperacao)
+                saldo <- saldo - valorDaOperacao;
+                escreval("")
+                escreval("Nome do Bando: ",bancoNome)
+                escreval("Agência: ",agencia)
+                escreval("Conta: ",conta)
+
+             outrocaso
+                 escreval("Operação invalida!")
+             fimescolha
+fimpara
+escreval("Saldo inicial = ", saldoInicial)
+escreval("Operação realizada = ", operacao)
+escreval("Saldo atual = ", saldo)
+
+Fimalgoritmo

@@ -1,0 +1,28 @@
+Algoritmo "Classificação de idade"
+
+Var
+nome: CARACTERE;
+idade: INTEIRO;
+
+Inicio
+escreva("Digite seu nome: ")
+leia(nome)
+escreva("Entre com sua idade: ")
+leia(idade)
+escreval("")
+
+se(idade < 18) entao
+         escreval("Você é menor de idade")
+         senao
+              se((idade >= 18) E (idade < 60)) entao
+                        escreval("Você é Adulto")
+                        senao
+                             se(idade >= 60) entao
+                                      escreval("Você é Idoso")
+                                      senao
+                                           escreval("Não é uma idade!")
+                             fimse
+              fimse
+fimse
+
+Fimalgoritmo

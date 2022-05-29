@@ -1,0 +1,12 @@
+## Resolução do exercicio 2 de lógica de programação
+
+Algoritmo "Exemplo"
+
+var 
+endereco: caractere
+
+Inicio
+	escreva("Digite seu endereço:")
+	leia(endereco)
+	escreva("Seu endereço é "+ endereco)
+Fimalgoritmo

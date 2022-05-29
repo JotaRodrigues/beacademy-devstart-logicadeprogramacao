@@ -1,0 +1,16 @@
+Algoritmo "Exercicio tabuada"
+
+Var
+i: INTEIRO;
+tabuada: INTEIRO;
+numero: INTEIRO;
+
+Inicio
+escreva("Digite o numero que deseja ver a tabuada: ")
+leia(numero)
+
+para i de 1 ate 10 faca
+     escreval(numero, " x ", i," = ", numero*i)
+fimpara
+
+Fimalgoritmo

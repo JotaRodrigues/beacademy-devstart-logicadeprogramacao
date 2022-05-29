@@ -1,0 +1,29 @@
+Algoritmo "Programa de saques consecutivos"
+
+Var
+saldo: REAL;
+confirmacao: CARACTERE;
+Inicio
+saldo <- 1000;
+repita
+      escreval("Deseja efetuar um saque ?")
+      leia(confirmacao)
+      escreval("")
+      se (confirmacao = "sim") entao
+         se ((saldo - 150)>0) entao
+            saldo <- saldo - 150;
+            senao
+               escreval("Saque não pode ser efetuado")
+               escreval("Saldo insuficiente")
+               escreval("")
+               interrompa
+         fimse
+      senao
+         se (confirmacao = "nao") entao
+            escreval("Finalizado por solicitação do usuário!")
+            interrompa
+         fimse
+      fimse
+ate saldo <= 0
+
+Fimalgoritmo

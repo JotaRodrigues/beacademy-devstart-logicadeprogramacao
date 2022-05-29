@@ -1,0 +1,35 @@
+Algoritmo "Contador de Pessoas menores de 18 e maiores de 60"
+
+Var
+menorDe18: INTEIRO;
+maiorDe60: INTEIRO;
+idade: INTEIRO;
+contador: INTEIRO;
+
+Inicio
+contador <- 1;
+repita
+      escreval("Entre com a idade da",contador," pessoa")
+      leia(idade)
+
+         se ((idade < 18)E(idade > 0)) entao
+            menorDe18 <- menorDe18 + 1;
+         senao
+            se (idade > 60) entao
+               maiorDe60 <- maiorDe60 + 1;
+            senao
+               se ((idade <= 0)E(idade > -99)) entao
+                 escreval("Idade invalida. Digite uma idade positiva!")
+                 contador <- contador-1;
+               fimse
+            fimse
+         fimse
+      contador <- contador+1;
+ate idade = -99
+
+escreval("")
+escreval("Foram digitados:",menorDe18," menores de 18")
+escreval("Foram digitados:",maiorDe60," maiores de 60")
+escreval("")
+                  
+Fimalgoritmo

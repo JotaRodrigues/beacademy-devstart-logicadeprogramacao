@@ -1,0 +1,56 @@
+Algoritmo "Operações com Switch Case"
+
+Var
+operacao: CARACTER;
+numero1: REAL;
+numero2: REAL;
+soma: REAL;
+subtracao: REAL;
+divisao: REAL;
+multiplicacao: REAL;
+resultado: REAL
+
+Inicio
+escreval("Qual operação deseja realizar? ")
+escreval("'+' para soma")
+escreval("'-' para subtração")
+escreval("'/' para divisão")
+escreval("'*' para multiplicação")
+leia(operacao)
+
+
+escolha operacao
+        caso "+"
+             escreval("Você selecionou a opção SOMA!")
+             escreva("Entre com o primeiro numero: ")
+             leia(numero1)
+             escreva("Entre com o segundo numero: ")
+             leia(numero2)
+             resultado <- numero1 + numero2;
+        caso "-"
+             escreval("Você selecionou a opção SUBTRAÇÃO!")
+             escreva("Entre com o primeiro numero: ")
+             leia(numero1)
+             escreva("Entre com o segundo numero: ")
+             leia(numero2)
+             resultado <- numero1 - numero2;
+        caso "/"
+             escreval("Você selecionou a opção DIVISÃO!")
+             escreva("Entre com o primeiro numero: ")
+             leia(numero1)
+             escreva("Entre com o segundo numero: ")
+             leia(numero2)
+             resultado <- numero1 / numero2;
+        caso "*"
+             escreval("Você selecionou a opção MULTIPLICAÇÃO!")
+             escreva("Entre com o primeiro numero: ")
+             leia(numero1)
+             escreva("Entre com o segundo numero: ")
+             leia(numero2)
+             resultado <- numero1 * numero2
+        outrocaso
+             escreval("Esta é um opção não existente!")
+fimescolha
+escreva("Resultado = ", resultado)
+escreval("")
+Fimalgoritmo

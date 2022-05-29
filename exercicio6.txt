@@ -1,0 +1,18 @@
+Algoritmo "exercicio 6"
+
+Var
+deposito: REAL;
+saldo: REAL;
+saldoInicial: REAL;
+
+Inicio
+escreval("Digite um valor para deposito: ")
+leia(deposito)
+saldoInicial <- saldo;
+saldo <- saldo + deposito;
+
+escreval("Saldo inicial de: ", saldoInicial)
+escreval("Valor do deposito = ", deposito)
+escreval("Saldo atual = ", saldo)
+
+Fimalgoritmo

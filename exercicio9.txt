@@ -1,0 +1,37 @@
+Algoritmo "Exercicio escolha saque-deposito"
+
+Var
+nome: CARACTERE;
+saldoInicial: REAL;
+saldo: REAL;
+operacao: REAL;
+opcao: CARACTERE;
+
+Inicio
+escreva("Digite seu nome: ")
+leia(nome)
+escreval("Entre com seu saldo inicial: ")
+leia(saldoInicial)
+escreval("Deseja efetuar um Deposito ou Saque? ")
+leia(opcao)
+escreval("")
+saldo <- saldoInicial;
+
+se(opcao = "deposito")entao
+         escreval("Entre com o valor do deposito: ")
+         leia(operacao)
+                       saldo <- saldo + operacao;
+         senão
+              se(opcao = "saque")entao
+              escreval("Entre com o valor que deseja sacar: ")
+              leia(operacao)
+                       saldo <- saldo - operacao;
+              fimse
+fimse
+
+escreval("")
+escreval("Seu saldo inicial era de: ",saldoInicial)
+escreval("Opção escolhida foi: ", opcao)
+escreval("Seu saldo atual é: ", saldo)
+
+Fimalgoritmo
